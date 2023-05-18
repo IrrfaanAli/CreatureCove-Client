@@ -61,9 +61,9 @@ const { createUser } = useContext(AuthContext);
             <div>
             <p className='text-red-500'>{error}</p>
                 <div>
-                    <div className="hero min-h-screen bg-base-200">
+                    <div className=" p-7  min-h-screen bg-base-200">
                      <form onSubmit={handlesignup}>
-                        <div className="card flex-shrink-0 w-full h-1/2  max-w-sm shadow-2xl bg-base-100">
+                        <div className="card flex-shrink-0 w-full h-1/2 mx-auto mt-24 max-w-sm shadow-2xl bg-base-100">
                             <div className="card-body">
                                 <div className="form-control">
                                     <label className="label">
@@ -89,7 +89,8 @@ const { createUser } = useContext(AuthContext);
                                     </label>
                                     <input type="text" placeholder="Photo URL" name="photourl" className="input input-bordered" />
                                     <label className="label">
-                                        <Link to={'/login'}><button>login</button></Link>
+                                    <p>Do not have Account? <Link to={'/login'}><span className="text-green-400">Login</span></Link></p>
+                                       
                                     </label>
                                 </div>                              
                                 <div className="form-control mt-6">
