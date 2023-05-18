@@ -1,0 +1,57 @@
+[
+  {
+   
+      "id": 9,
+      "name": "ami a",
+      "category": "a",
+      "price": 6.99,
+      "rating": 4.7,
+      "popular": true
+   
+  },
+  {
+   
+    "id": 4,
+    "name": "ami b",
+    "category": "b",
+    "price": 6.99,
+    "rating": 4.7,
+    "popular": true
+ 
+},
+{
+   
+  "id": 6,
+  "name": "ami c",
+  "category": "c",
+  "price": 6.99,
+  "rating": 4.7,
+  "popular": true
+
+},
+{
+   
+  "id": 2,
+  "name": "ami a",
+  "category": "a",
+  "price": 6.99,
+  "rating": 4.7,
+  "popular": true
+
+},
+{
+   
+  "id": 1,
+  "name": "ami b",
+  "category": "b",
+  "price": 6.99,
+  "rating": 4.7,
+  "popular": true
+
+}
+  
+  
+  
+ 
+  
+]
