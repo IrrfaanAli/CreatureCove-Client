@@ -1,6 +1,27 @@
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../providers/AuthProviders";
 
 const Navbar = () => {
+    const { user, logout } = useContext(AuthContext);
+    const [isHovering, setIsHovering] = useState(false);
+    console.log(user);
+
+    const handleLogOut = () => {
+        logout()
+            .then()
+            .catch(error => {
+                console.log(error);
+            })
+    }
+
+    const handleMouseEnter = () => {
+        setIsHovering(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovering(false);
+    };
     return (
         <div>
             <div className="navbar bg-base-100">
@@ -17,7 +38,7 @@ const Navbar = () => {
                             <Link to={'/addtoy'}><button className="m-3">Add Toy</button></Link>
                             <Link to={'/blogs'}><button className="m-3">Blogs</button></Link>
 
-                            
+
                         </ul>
                     </div>
                     <div>
@@ -27,7 +48,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <Link  to={'/'}><button className="m-3 p-7" >Home</button></Link>
+                        <Link to={'/'}><button className="m-3 p-7" >Home</button></Link>
                         <Link to={'/alltoyes'}><button className="m-3 p-7"> All Toys</button></Link>
                         <Link to={'/mytoys'}><button className="m-3 p-7">My Toys</button></Link>
                         <Link to={'/addtoy'}><button className="m-3 p-7">Add Toye</button></Link>
@@ -35,8 +56,29 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                <Link to={'/login'}><button className="m-3 p-7">Log In</button></Link>
-                <Link to={'/logout'}><button className="m-3 p-7">Log Out</button></Link>
+                
+                    {user ? (
+                        
+                        <div
+                            className="relative cursor-pointer"
+                            onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave}
+                        >
+                            <div className='flex gap-2'>
+                                <img className='rounded-full w-12 h-12 ' src={user.photoURL} alt="" />
+
+                                <button onClick={handleLogOut} className='bg-orange-500 text-white p-2 rounded'>LogOut</button>
+                            </div>
+
+                            {isHovering && (
+                                <div className="absolute transform -translate-x-1/2 bg-white shadow-lg rounded-lg py-2 px-4">
+                                    <p className="text-gray-800">{user.displayName}</p>
+                                </div>
+                            )}
+                        </div>
+                    ) : (
+                        <Link to={'/login'}><button className='bg-orange-500 text-white p-2 rounded'>LogIn</button></Link>
+                    )}
                 </div>
             </div>
         </div>
