@@ -32,7 +32,7 @@ const Subtabs = () => {
          <div  className="">
         <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
             <TabList className=" flex m-3 justify-between bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-                <Tab> <button className='btn btn-wide'>Dog</button></Tab>
+                <Tab> <button className='btn btn-wide' >Dog</button></Tab>
                 <Tab> <button className='btn btn-wide'>Cat</button></Tab>
                 <Tab><button className='btn btn-wide'>Dinosur</button></Tab>
                 <Tab><button className='btn btn-wide'>Unicorn</button></Tab>
