@@ -42,7 +42,7 @@ import ErrorPage from "../pages/ErrorPage";
             },
             {
               path : 'addtoy',
-              element : <AddToy></AddToy> ,
+              element : <PrivateRoute><AddToy></AddToy></PrivateRoute> ,
              
             },
             {
