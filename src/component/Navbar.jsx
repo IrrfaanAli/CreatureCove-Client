@@ -33,7 +33,7 @@ const Navbar = () => {
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
 
                             <Link to={'/'}><button className="m-3">Home</button></Link>
-                            <Link to={'/alltoyes'}><button className="m-3"> All Toys</button></Link>
+                            <Link to={'/alltoys'}><button className="m-3"> All Toys</button></Link>
                             <Link to={'/mytoys'}><button className="m-3">My Toys</button></Link>
                             <Link to={'/addtoy'}><button className="m-3">Add Toy</button></Link>
                             <Link to={'/blogs'}><button className="m-3">Blogs</button></Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <Link to={'/'}><button className="m-3 p-7" >Home</button></Link>
-                        <Link to={'/alltoyes'}><button className="m-3 p-7"> All Toys</button></Link>
+                        <Link to={'/alltoys'}><button className="m-3 p-7"> All Toys</button></Link>
                         <Link to={'/mytoys'}><button className="m-3 p-7">My Toys</button></Link>
                         <Link to={'/addtoy'}><button className="m-3 p-7">Add Toye</button></Link>
                         <Link to={'/blogs'}><button className="m-3 p-7">Blogs</button></Link>
