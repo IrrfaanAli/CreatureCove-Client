@@ -42,7 +42,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div>
-                        <img src="logo.png" className="w-24  h-24 rounded-full" alt="" />
+                        <img src="/logo.png" className="w-24  h-24 rounded-full" alt="" />
                     </div>
                     <a className="btn btn-ghost normal-case text-4xl font-bold text-rose-500">CreatureCove</a>
                 </div>

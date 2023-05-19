@@ -4,7 +4,7 @@ const Footer = () => {
         <div>
             <footer className="footer p-10 bg-neutral text-neutral-content">
                 <div>
-                <img src="logo.png" className="w-24  h-24 " alt="" />
+                <img src="/logo.png" className="w-24  h-24 " alt="" />
                     <p>CretureCove Industries Ltd.<br />Providing reliable service since 1992</p>
                 </div>
                 <div>

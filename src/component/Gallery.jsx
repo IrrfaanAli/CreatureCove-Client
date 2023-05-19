@@ -13,7 +13,7 @@ const Gallery = () => {
                         <div className="w-1/2 p-1 md:p-4">
                             <img
                                 alt="gallery"
-                                className="block h-full w-full rounded-lg object-cover object-center"
+                                className="block h-full w-full rounded-lg object-cover object-center "
                                 src="/dog.jpg" />
                         </div>
                         <div className="w-1/2 p-1 md:p-4">
