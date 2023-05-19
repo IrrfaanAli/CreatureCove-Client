@@ -8,6 +8,7 @@ import ViewDetails from "../component/ViewDetails";
 import AllToys from "../pages/AllToys";
 import PrivateRoute from "../component/PrivateRoute";
 import AddToy from "../pages/AddToy";
+import ErrorPage from "../pages/ErrorPage";
 
     const router = createBrowserRouter([
         {
@@ -44,7 +45,10 @@ import AddToy from "../pages/AddToy";
               element : <AddToy></AddToy> ,
              
             },
-            
+            {
+              path :"*",
+              element:<ErrorPage></ErrorPage>
+             }
 
           ]
         },
