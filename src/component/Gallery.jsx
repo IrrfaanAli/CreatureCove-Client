@@ -3,7 +3,7 @@
 const Gallery = () => {
     return (
         <div>
-            <h1 className="text-5xl text-center p-3 font-bold"> GELLAY</h1>
+            <h1 className="text-5xl text-center p-3 font-bold"> - GALLERY -</h1>
 
 
             <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">

@@ -28,7 +28,7 @@ const Subtabs = () => {
 
     return (
         <>
-         <h1 className='text-center text-5xl font-bold p-7'>SHOP CATEGORY</h1>
+         <h1 className='text-center text-5xl font-bold p-7'> - SHOP CATEGORY -</h1>
          <div  className="">
         <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
             <TabList className=" flex m-3 justify-between bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">

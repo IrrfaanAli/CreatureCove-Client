@@ -44,15 +44,15 @@ const Navbar = () => {
                     <div>
                         <img src="logo.png" className="w-24  h-24 rounded-full" alt="" />
                     </div>
-                    <a className="btn btn-ghost normal-case text-4xl font-bold">CreatureCove</a>
+                    <a className="btn btn-ghost normal-case text-4xl font-bold text-rose-500">CreatureCove</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <Link to={'/'}><button className="m-3 p-7" >Home</button></Link>
-                        <Link to={'/alltoys'}><button className="m-3 p-7"> All Toys</button></Link>
-                        <Link to={'/mytoys'}><button className="m-3 p-7">My Toys</button></Link>
-                        <Link to={'/addtoy'}><button className="m-3 p-7">Add Toye</button></Link>
-                        <Link to={'/blogs'}><button className="m-3 p-7">Blogs</button></Link>
+                        <Link to={'/'}><button className="m-3 p-5 text-xl font-semibold" >Home</button></Link>
+                        <Link to={'/alltoys'}><button className="m-3 p-5  text-xl font-semibold"> All Toys</button></Link>
+                        <Link to={'/mytoys'}><button className="m-3 p-5 text-xl font-semibold">My Toys</button></Link>
+                        <Link to={'/addtoy'}><button className="m-3 p-5 text-xl font-semibold">Add Toye</button></Link>
+                        <Link to={'/blogs'}><button className="m-3 p-5 text-xl font-semibold">Blogs</button></Link>
                     </ul>
                 </div>
                 <div className="navbar-end">
@@ -67,7 +67,7 @@ const Navbar = () => {
                             <div className='flex gap-2'>
                                 <img className='rounded-full w-12 h-12 ' src={user.photoURL} alt="" />
 
-                                <button onClick={handleLogOut} className='bg-orange-500 text-white p-2 rounded'>LogOut</button>
+                                <button onClick={handleLogOut} className='bg-rose-500 text-white p-3 rounded'>LogOut</button>
                             </div>
 
                             {isHovering && (
@@ -77,7 +77,7 @@ const Navbar = () => {
                             )}
                         </div>
                     ) : (
-                        <Link to={'/login'}><button className='bg-orange-500 text-white p-2 rounded'>LogIn</button></Link>
+                        <Link to={'/login'}><button className='bg-rose-500 text-white p-3 rounded'>LogIn</button></Link>
                     )}
                 </div>
             </div>

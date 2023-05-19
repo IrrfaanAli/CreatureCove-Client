@@ -3,8 +3,7 @@ import { RxStarFilled } from "react-icons/rx"
 const CustomerLove = () => {
     return (
         <div className="py-7 mb-12 ml-20">
-            <h1 className="text-center text-5xl font-bold p-3">OUR COUSTOMER LOVES US</h1>
-            <h1 className="text-center text-2xl font-semibold mb-12">- Customer Comments - </h1>
+            <h1 className="text-center text-5xl font-bold p-3">- OUR COUSTOMER LOVES US -</h1>
             <div className="flex gap-10 justify-around p-12">
 
 

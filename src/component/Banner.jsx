@@ -7,8 +7,9 @@ const Banner = () => {
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
-                        <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-                        <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <h1 className="mb-5 text-7xl font-bold text-orange-500">CreatureCove</h1>
+                        <p className="mb-5 text-xl font-bold text-black">- Our Toys Bring the Animal Kingdom to Life -</p>
+                        <p className="p-2">Welcome to our CreatureCove, where dreams and playtime come alive! Discover a captivating world of lifelike animal toys that will ignite your imagination and bring joy to all ages. From cuddly plush companions to intricately crafted figurines, our wide range of animal toys ensures there's something for every animal lover. Dive into the wild wonders of the animal kingdom and embark on unforgettable adventures with our meticulously designed, high-quality toys. Whether you're looking to enhance your collection or find the perfect gift, our Animal Toy Market is your ultimate destination for imaginative play and endless smiles.</p>
                         
                     </div>
                 </div>

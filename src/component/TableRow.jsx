@@ -2,40 +2,35 @@
 
 const TableRow = ({ atr }) => {
 
-    const { name } = atr;
+    const { name, subcategory, price, availableQuantity, sellerName } = atr;
     return (
-  
-            <tbody>
-                <tr>
-                    <th>
-                        <label>
-                            <input type="checkbox" className="checkbox" />
-                        </label>
-                    </th>
-                    <td>
-                        <div className="flex items-center space-x-3">
 
-                            <div>
-                                <div className="font-bold">{name}</div>
 
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        Zemlak, Daniel and Leannon
-                        <br />
-                        <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
-                    </td>
-                    <td>Purple</td>
-                    <td>Purple</td>
-                    <td>Purple</td>
-                    <th>
-                        <button className="btn btn-ghost btn-xs">details</button>
-                    </th>
-                </tr>
-            </tbody>
-         
+        <tr>
+            <th>
+                
+            </th>
+            <td>
+                <div className="flex items-center space-x-3">
 
+                    <div>
+                        <div className="font-bold">{sellerName}</div>
+
+                    </div>
+                </div>
+            </td>
+            <td>
+                {name}
+                <br />
+               
+            </td>
+            <td>{subcategory}</td>
+            <td>{price}</td>
+            <td>{availableQuantity}</td>
+            <th>
+                <button className="btn bg-orange-500 border-none">Details</button>
+            </th>
+        </tr>
 
     );
 };
