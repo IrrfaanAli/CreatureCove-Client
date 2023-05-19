@@ -1,57 +1,165 @@
 [
-  {
-   
-      "id": 9,
-      "name": "ami a",
-      "category": "a",
-      "price": 6.99,
-      "rating": 4.7,
-      "popular": true
+  {  
+     
+      "name": "A",
+      "subcategory": "Dog",
+      "price": 12.99,
+      "pictureUrl": "https://example.com/images/plush-puppy.jpg",
+      "availableQuantity": 10,
+      "description": "A soft and cuddly plush puppy toy for your furry friends.",
+      "rating": 4.5,
+      "sellerName":"Pet Paradise" ,
+      "sellerEmail":"info@petparadise.com"
+       
+    
    
   },
   {
    
-    "id": 4,
-    "name": "ami b",
-    "category": "b",
-    "price": 6.99,
-    "rating": 4.7,
-    "popular": true
+  
+    "name": "B",
+    "subcategory": "Dog",
+    "price": 12.99,
+    "pictureUrl": "https://example.com/images/plush-puppy.jpg",
+    "availableQuantity": 10,
+    "description": "A soft and cuddly plush puppy toy for your furry friends.",
+    "rating": 4.5,
+    "sellerName":"Pet Paradise" ,
+    "sellerEmail":"info@petparadise.com"
  
 },
 {
    
-  "id": 6,
-  "name": "ami c",
-  "category": "c",
-  "price": 6.99,
-  "rating": 4.7,
-  "popular": true
+ 
+      "name": "C",
+      "subcategory": "Cat",
+      "price": 12.99,
+      "pictureUrl": "https://example.com/images/plush-puppy.jpg",
+      "availableQuantity": 10,
+      "description": "A soft and cuddly plush puppy toy for your furry friends.",
+      "rating": 4.5,
+      "sellerName":"Pet Paradise" ,
+      "sellerEmail":"info@petparadise.com"
 
 },
 {
    
-  "id": 2,
-  "name": "ami a",
-  "category": "a",
-  "price": 6.99,
-  "rating": 4.7,
-  "popular": true
+  
+  "name": "D",
+  "subcategory": "Cat",
+  "price": 12.99,
+  "pictureUrl": "https://example.com/images/plush-puppy.jpg",
+  "availableQuantity": 10,
+  "description": "A soft and cuddly plush puppy toy for your furry friends.",
+  "rating": 4.5,
+  "sellerName":"Pet Paradise" ,
+  "sellerEmail":"info@petparadise.com"
 
 },
 {
-   
-  "id": 1,
-  "name": "ami b",
-  "category": "b",
-  "price": 6.99,
-  "rating": 4.7,
-  "popular": true
+  
+      "name": "E",
+      "subcategory": "Teddy",
+      "price": 12.99,
+      "pictureUrl": "https://example.com/images/plush-puppy.jpg",
+      "availableQuantity": 10,
+      "description": "A soft and cuddly plush puppy toy for your furry friends.",
+      "rating": 4.5,
+      "sellerName":"Pet Paradise" ,
+      "sellerEmail":"info@petparadise.com"
+
+},
+{
+  
+      "name": "F",
+      "subcategory": "Teddy",
+      "price": 12.99,
+      "pictureUrl": "https://example.com/images/plush-puppy.jpg",
+      "availableQuantity": 10,
+      "description": "A soft and cuddly plush puppy toy for your furry friends.",
+      "rating": 4.5,
+      "sellerName":"Pet Paradise" ,
+      "sellerEmail":"info@petparadise.com"
+
+},
+{
+ 
+      "name": "G",
+      "subcategory": "Dinosaur",
+      "price": 12.99,
+      "pictureUrl": "https://example.com/images/plush-puppy.jpg",
+      "availableQuantity": 10,
+      "description": "A soft and cuddly plush puppy toy for your furry friends.",
+      "rating": 4.5,
+      "sellerName":"Pet Paradise" ,
+      "sellerEmail":"info@petparadise.com"
+
+},
+{
+  
+      "name": "H",
+      "subcategory": "Dinosaur",
+      "price": 12.99,
+      "pictureUrl": "https://example.com/images/plush-puppy.jpg",
+      "availableQuantity": 10,
+      "description": "A soft and cuddly plush puppy toy for your furry friends.",
+      "rating": 4.5,
+      "sellerName":"Pet Paradise" ,
+      "sellerEmail":"info@petparadise.com"
+
+},
+{
+  
+      "name": "I",
+      "subcategory": "Unicorn",
+      "price": 12.99,
+      "pictureUrl": "https://example.com/images/plush-puppy.jpg",
+      "availableQuantity": 10,
+      "description": "A soft and cuddly plush puppy toy for your furry friends.",
+      "rating": 4.5,
+      "sellerName":"Pet Paradise" ,
+      "sellerEmail":"info@petparadise.com"
+
+},
+{
+  
+      "name": "J",
+      "subcategory": "Unicorn",
+      "price": 12.99,
+      "pictureUrl": "https://example.com/images/plush-puppy.jpg",
+      "availableQuantity": 10,
+      "description": "A soft and cuddly plush puppy toy for your furry friends.",
+      "rating": 4.5,
+      "sellerName":"Pet Paradise" ,
+      "sellerEmail":"info@petparadise.com"
+
+},
+{
+  
+      "name": "K",
+      "subcategory": "Dinosaur",
+      "price": 12.99,
+      "pictureUrl": "https://example.com/images/plush-puppy.jpg",
+      "availableQuantity": 10,
+      "description": "A soft and cuddly plush puppy toy for your furry friends.",
+      "rating": 4.5,
+      "sellerName":"Pet Paradise" ,
+      "sellerEmail":"info@petparadise.com"
+
+},
+{
+
+      "name": "L",
+      "subcategory": "Cat",
+      "price": 12.99,
+      "pictureUrl": "https://example.com/images/plush-puppy.jpg",
+      "availableQuantity": 10,
+      "description": "A soft and cuddly plush puppy toy for your furry friends.",
+      "rating": 4.5,
+      "sellerName":"Pet Paradise" ,
+      "sellerEmail":"info@petparadise.com"
 
 }
   
-  
-  
- 
-  
+
 ]

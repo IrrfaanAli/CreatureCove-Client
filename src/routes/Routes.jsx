@@ -4,6 +4,7 @@ import Blogs from "../pages/Blogs";
 import Main from "../pages/Main";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
+import ViewDetails from "../component/ViewDetails";
 
     const router = createBrowserRouter([
         {
@@ -24,6 +25,10 @@ import Signup from "../pages/Signup";
             {
                 path : 'signup',
                 element : <Signup></Signup>
+            },{
+              path: 'toys/:id',
+              element : <ViewDetails></ViewDetails>,
+              loader : ({params}) => fetch(`http://localhost:5000/toys/${params.id}`)
             }
           ]
         },
