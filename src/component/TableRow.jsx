@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 
 
 const TableRow = ({ atr }) => {
 
-    const { name, subcategory, price, availableQuantity, sellerName } = atr;
+    const {_id, name, subcategory, price, availableQuantity, sellerName } = atr;
     return (
 
 
@@ -28,7 +29,7 @@ const TableRow = ({ atr }) => {
             <td>{price}</td>
             <td>{availableQuantity}</td>
             <th>
-                <button className="btn bg-orange-500 border-none">Details</button>
+             <Link to={`/toys/${_id}`}>  <button className="btn bg-orange-500 border-none">Details</button></Link>  
             </th>
         </tr>
 

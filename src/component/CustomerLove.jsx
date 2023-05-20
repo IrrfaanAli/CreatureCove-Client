@@ -1,10 +1,18 @@
 import { RxStarFilled } from "react-icons/rx"
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 const CustomerLove = () => {
+    useEffect(()=>{
+        Aos.init({
+            duration: 2500,
+          });
+    })
     return (
-        <div className="py-7 mb-12 ml-20">
-            <h1 className="text-center text-5xl font-bold p-3">- OUR COUSTOMER LOVES US -</h1>
-            <div className="flex gap-10 justify-around p-12">
+        <div className=" py-3 lg:py-7 mb-3 lg:mb-12 ml-20"  data-aos="fade-up">
+            <h1 className="text-center text-2xl lg:text-5xl font-bold p-3" >- OUR COUSTOMER LOVES US -</h1>
+            <div className="flex flex-col lg:flex-row gap-10 justify-around p-12">
 
 
                 <div>
@@ -22,7 +30,7 @@ const CustomerLove = () => {
                         </div>
                     </div>
                     <p className="mt-3 mb-3">The quality of proudct are awesome, I and my kids really love it</p>
-                    <div className="flex">
+                    <div className="flex" >
                         <img className="w-12 h-12 rounded-full" src="/user.jpg" alt="" />
                         <div className="mx-5">
                             <p>Michael Dam</p>

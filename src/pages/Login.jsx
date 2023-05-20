@@ -1,21 +1,25 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Footer from "../component/Footer";
 import Navbar from "../component/Navbar";
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import { AuthContext } from "../providers/AuthProviders";
 import { useContext, useState } from "react";
 import app from "../firebase/firebase.config";
+import useTitle from "../hooks/useTitle";
 
 
 const Login = () => {
+    useTitle("LogIn");
 
     const [err, setErr] = useState('');
-
+ 
+    const location = useLocation();
 
     const auth = getAuth(app);
     const GoogleProvider = new GoogleAuthProvider();
 
     const { userlogin } = useContext(AuthContext);
+    const  from =  location.state?.form?.pathname  || '/';
     const navigate = useNavigate();
     const handleLogIn = event => {
 
@@ -31,7 +35,7 @@ const Login = () => {
         userlogin(email, password)
             .then(result => {
                 console.log(result.user);
-                navigate('/');
+                navigate(from,{replace:true});
             })
             .catch(error => {
                 setErr(error.message);
@@ -44,7 +48,7 @@ const Login = () => {
         signInWithPopup(auth, GoogleProvider)
             .then(result => {
                 console.log(result.user);
-                navigate('/');
+                navigate(from,{replace:true});
 
             })
             .catch(error => {

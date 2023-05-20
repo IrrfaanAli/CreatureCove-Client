@@ -34,7 +34,8 @@ const Navbar = () => {
 
                             <Link to={'/'}><button className="m-3">Home</button></Link>
                             <Link to={'/alltoys'}><button className="m-3"> All Toys</button></Link>
-                            <Link to={'/mytoys'}><button className="m-3">My Toys</button></Link>
+                           
+                            {user && <Link to={'/mytoys'}><button className="m-3 p-5 text-xl font-semibold">My Toys</button></Link> }
                             <Link to={'/addtoy'}><button className="m-3">Add Toy</button></Link>
                             <Link to={'/blogs'}><button className="m-3">Blogs</button></Link>
 
@@ -46,11 +47,12 @@ const Navbar = () => {
                     </div>
                     <a className="btn btn-ghost normal-case text-4xl font-bold text-rose-500">CreatureCove</a>
                 </div>
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-center hidden lg:flex" >
                     <ul className="menu menu-horizontal px-1">
                         <Link to={'/'}><button className="m-3 p-5 text-xl font-semibold" >Home</button></Link>
                         <Link to={'/alltoys'}><button className="m-3 p-5  text-xl font-semibold"> All Toys</button></Link>
-                        <Link to={'/mytoys'}><button className="m-3 p-5 text-xl font-semibold">My Toys</button></Link>
+                        {user && <Link to={'/mytoys'}><button className="m-3 p-5 text-xl font-semibold">My Toys</button></Link> }
+                        
                         <Link to={'/addtoy'}><button className="m-3 p-5 text-xl font-semibold">Add Toye</button></Link>
                         <Link to={'/blogs'}><button className="m-3 p-5 text-xl font-semibold">Blogs</button></Link>
                     </ul>

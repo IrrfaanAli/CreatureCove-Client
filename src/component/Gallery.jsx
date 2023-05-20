@@ -1,12 +1,19 @@
-
+import { useEffect } from "react";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Gallery = () => {
+    useEffect(()=>{
+        Aos.init({
+            duration: 2500,
+          });
+    })
     return (
         <div>
-            <h1 className="text-5xl text-center p-3 font-bold"> - GALLERY -</h1>
+            <h1 className="text-3xl lg:text-5xl text-center p-3 font-bold"> - GALLERY -</h1>
 
 
-            <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
+            <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24" data-aos="fade-up" >
                 <div className="-m-1 flex flex-wrap md:-m-2">
                     <div className="flex w-1/2 flex-wrap">
                        

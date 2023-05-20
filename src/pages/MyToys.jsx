@@ -1,33 +1,38 @@
-import { useLoaderData } from "react-router-dom";
-import Footer from "../component/Footer";
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../providers/AuthProviders";
 import Navbar from "../component/Navbar";
-import TableRow from "../component/TableRow";
-import { useState } from "react";
+import Footer from "../component/Footer";
+
+import MytoyRow from "../component/MytoyRow";
 import useTitle from "../hooks/useTitle";
 
 
-const AllToys = () => {
-    useTitle("All Toys");
-    const allToysData = useLoaderData()
-    const [query, setQuery] = useState("")
+const MyToys = () => {
+    useTitle("My Toys");
+    const {user} = useContext(AuthContext);
+    const [mytoys, setMytoys] = useState([]);
 
+    const url = `http://localhost:5000/mytoys?sellerEmail=${user?.email}`
+
+    useEffect(()=>{
+      
+        fetch(url)
+        .then(res => res.json())
+        .then(data => setMytoys(data))
+    },[])
     return (
         <div>
-
-
             <Navbar></Navbar>
-            <div className=" w-72 ml-12 mb-12">
-                <input type="text" placeholder="Search" className="input input-bordered" onChange={(e) => setQuery(e.target.value)} />
-            </div>
 
-
+         <button>decendig</button>
+         
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
                     {/* head */}
                     <thead >
                         <tr>
                             <th>
-
+                               
                             </th>
                             <th>Seller</th>
                             <th>Toy Name</th>
@@ -38,10 +43,14 @@ const AllToys = () => {
                         </tr>
                     </thead>
                     <tbody>
-
-
+                      
+                       
                         {
-                            allToysData.filter(data => data.name.toLowerCase().includes(query)).map((atr) => <TableRow key={atr._id} atr={atr}></TableRow>)
+                            mytoys.map((atr) => <MytoyRow key={atr._id}
+                             atr={atr}
+                             mytoys ={mytoys}
+                             setMytoys ={setMytoys}
+                            ></MytoyRow>)
                         }
 
                     </tbody>
@@ -51,13 +60,9 @@ const AllToys = () => {
 
 
 
-
-
-
-
             <Footer></Footer>
         </div>
     );
 };
 
-export default AllToys;
+export default MyToys;

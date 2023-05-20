@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBPAeY-5wEzft6pKisvsaAQct6bSBg0rUw",
-  authDomain: "creaturecove-client.firebaseapp.com",
-  projectId: "creaturecove-client",
-  storageBucket: "creaturecove-client.appspot.com",
-  messagingSenderId: "643145224078",
-  appId: "1:643145224078:web:8518317b4d039dd0845edf"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID
 };
 
 // Initialize Firebase

@@ -4,12 +4,14 @@ import Blogs from "../pages/Blogs";
 import Main from "../pages/Main";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
-import ViewDetails from "../component/ViewDetails";
+
 import AllToys from "../pages/AllToys";
 import PrivateRoute from "../component/PrivateRoute";
 import AddToy from "../pages/AddToy";
 import ErrorPage from "../pages/ErrorPage";
 import ViewDetailsPage from "../pages/ViewDetailsPage";
+import MyToys from "../pages/MyToys";
+import UpdateToy from "../pages/UpdateToy";
 
 
     const router = createBrowserRouter([
@@ -35,12 +37,12 @@ import ViewDetailsPage from "../pages/ViewDetailsPage";
             {
               path: 'toys/:id',
               element : <PrivateRoute> <ViewDetailsPage></ViewDetailsPage></PrivateRoute>,
-              loader : ({params}) => fetch(`http://localhost:5000/toys/${params.id}`)
+              loader : ({params}) => fetch(`https://assignment11-tan.vercel.app/toys/${params.id}`)
             },
             {
               path : 'alltoys',
               element : <AllToys></AllToys>,
-              loader : ()=> fetch("http://localhost:5000/toys/")
+              loader : ()=> fetch("https://assignment11-tan.vercel.app/toys/")
             },
             {
               path : 'addtoy',
@@ -50,6 +52,15 @@ import ViewDetailsPage from "../pages/ViewDetailsPage";
             {
               path :"*",
               element:<ErrorPage></ErrorPage>
+             },
+             {
+               path :'mytoys',
+               element : <PrivateRoute><MyToys></MyToys></PrivateRoute> 
+             },
+             {
+               path : "updatetoy/:id",
+               element :<UpdateToy></UpdateToy>,
+               loader : ({params}) => fetch(`https://assignment11-tan.vercel.app/toys/${params.id}`)
              }
 
           ]

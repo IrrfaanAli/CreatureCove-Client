@@ -4,8 +4,10 @@ import Navbar from "../component/Navbar";
 import { useContext, useState } from "react";
 import { AuthContext } from "../providers/AuthProviders";
 import { updateProfile } from "firebase/auth";
+import useTitle from "../hooks/useTitle";
 
 const Signup = () => {
+    useTitle("SignUp");
 const [error,setError] = useState('');
 const { createUser } = useContext(AuthContext);
 
@@ -13,14 +15,13 @@ const { createUser } = useContext(AuthContext);
     event.preventDefault();
 
     const form = event.target;
-  
      const name = form.name.value;
      const email = form.email.value;
      const password = form.password.value;
      const photourl = form.photourl.value;
 
      console.log(name,email,password,photourl);
-    //
+
 
     createUser(email,password)
     .then(result =>{
@@ -33,7 +34,7 @@ const { createUser } = useContext(AuthContext);
     })
 
     if(password.length < 6){
-        setError("please provide at least 6 character in password")
+        setError("please provide at least 6 character password")
     }
 
     const updateUserData= (user,name,photourl)=>{
@@ -50,7 +51,7 @@ const { createUser } = useContext(AuthContext);
         })
     }
 
-    form.reset()
+    
 
  }
 
@@ -94,14 +95,15 @@ const { createUser } = useContext(AuthContext);
                                     </label>
                                 </div>                              
                                 <div className="form-control mt-6">
-                                    <button className="btn btn-primary">Save</button>
+                                    <button type="submit" className="btn btn-primary">Save</button>
                                 </div>
                             </div>
                         </div>
                         </form>
                     </div>
-
+                           
                 </div>
+    
             </div>
             <Footer></Footer>
         </>
