@@ -44,7 +44,9 @@ const Login = () => {
 
 
     }
-    const handleGoolgeSignIn = () => {
+    const handleGoolgeSignIn = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
         signInWithPopup(auth, GoogleProvider)
             .then(result => {
                 console.log(result.user);

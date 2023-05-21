@@ -9,30 +9,51 @@ import useTitle from "../hooks/useTitle";
 
 const MyToys = () => {
     useTitle("My Toys");
-    const {user} = useContext(AuthContext);
+    const { user } = useContext(AuthContext);
     const [mytoys, setMytoys] = useState([]);
 
-    const url = `http://localhost:5000/mytoys?sellerEmail=${user?.email}`
 
-    useEffect(()=>{
-      
+
+    const url = `https://creaturecove.vercel.app/mytoys?sellerEmail=${user?.email}`
+
+    useEffect(() => {
+
         fetch(url)
-        .then(res => res.json())
-        .then(data => setMytoys(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setMytoys(data))
+    }, [url])
+
+
+    const decending = () => {
+
+        const url1 = `https://creaturecove.vercel.app/mytoys?sellerEmail=${user?.email}&sort=-1`
+        fetch(url1)
+            .then(res => res.json())
+            .then(data => setMytoys(data))
+    }
+    const acending = () => {
+
+        const url1 = `https://creaturecove.vercel.app/mytoys?sellerEmail=${user?.email}&sort=1`
+        fetch(url1)
+            .then(res => res.json())
+            .then(data => setMytoys(data))
+    }
+
     return (
         <div>
             <Navbar></Navbar>
+            <div className="m-3">
+                <button onClick={acending} className="p-3 bg-orange-300">Acending </button>
+                <button onClick={decending} className="p-3 bg-green-300">Decending</button>
+            </div>
 
-         <button>decendig</button>
-         
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
                     {/* head */}
                     <thead >
                         <tr>
                             <th>
-                               
+
                             </th>
                             <th>Seller</th>
                             <th>Toy Name</th>
@@ -43,13 +64,13 @@ const MyToys = () => {
                         </tr>
                     </thead>
                     <tbody>
-                      
-                       
+
+
                         {
                             mytoys.map((atr) => <MytoyRow key={atr._id}
-                             atr={atr}
-                             mytoys ={mytoys}
-                             setMytoys ={setMytoys}
+                                atr={atr}
+                                mytoys={mytoys}
+                                setMytoys={setMytoys}
                             ></MytoyRow>)
                         }
 

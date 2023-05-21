@@ -30,7 +30,7 @@ const UpdateToy = () => {
       
      
 
-      fetch(`https://assignment11-tan.vercel.app/toys/${_id}`,{
+      fetch(`https://creaturecove.vercel.app/toys/${_id}`,{
          method : 'PUT',
          headers : {
             'content-type': 'application/json'

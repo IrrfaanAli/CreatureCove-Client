@@ -14,7 +14,7 @@ const Card = ({toys}) => {
    
     return (
         <div>
-            <div className="card  w-72 lg:w-96 bg-base-100 shadow-xl p-5 lg:p-12 ml-24 bg-rose-100"  data-aos="fade-up">
+            <div className="card  w-72 lg:w-72 bg-base-100 shadow-xl p-5 lg:p-12 ml-24 bg-rose-100"  data-aos="fade-up">
                 <figure><img src={pictureUrl} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>

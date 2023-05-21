@@ -18,7 +18,7 @@ const MytoyRow = ({atr,mytoys,setMytoys}) => {
             confirmButtonText: 'Yes, delete it!'
           }).then((result) => {
             if (result.isConfirmed) {
-             fetch(`https://assignment11-tan.vercel.app/toys/${_id}`,{
+             fetch(`https://creaturecove.vercel.app/toys/${_id}`,{
                 method: "DELETE"
              })
              .then(res => res.json())
@@ -66,9 +66,9 @@ const MytoyRow = ({atr,mytoys,setMytoys}) => {
             <td>{price}</td>
             <td>{availableQuantity}</td>
             <th>
-             <Link to={`/toys/${_id}`}>  <button className="btn bg-orange-500 border-none">Details</button></Link>  
-             <Link to={`/updatetoy/${_id}`}>  <button className="btn bg-orange-500 border-none">Update</button></Link>  
-             <button  onClick={()=>handleDelete(_id)} className="btn bg-orange-500 border-none">Delete</button>
+             <Link to={`/toys/${_id}`}>  <button className="btn bg-orange-500 border-none ml-3">Details</button></Link>  
+             <Link to={`/updatetoy/${_id}`}>  <button className="btn bg-orange-500 border-none ml-3">Update</button></Link>  
+             <button  onClick={()=>handleDelete(_id)} className="btn bg-red-500 border-none ml-3">Delete</button>
             </th>
         </tr>
 

@@ -17,9 +17,9 @@ const CustomerLove = () => {
 
                 <div>
                     <div className="flex bg-rose-50">
-                        <img className="w-20 h-20" src="/cat2.jpg" alt="" />
+                        <img className="w-20 h-20" src="/cat1.jpg" alt="" />
                         <div className="p-4" >
-                            <p>CAT</p>
+                            <p>Cat</p>
                             <div className="flex">
                                 <p><RxStarFilled /></p>
                                 <p><RxStarFilled /></p>
@@ -31,10 +31,10 @@ const CustomerLove = () => {
                     </div>
                     <p className="mt-3 mb-3">The quality of proudct are awesome, I and my kids really love it</p>
                     <div className="flex" >
-                        <img className="w-12 h-12 rounded-full" src="/user.jpg" alt="" />
+                        <img className="w-12 h-12 rounded-full" src="/user11.jpg" alt="" />
                         <div className="mx-5">
-                            <p>Michael Dam</p>
-                            <p>November 18,2022</p>
+                            <p>Mike clob</p>
+                            <p>April 08,2021</p>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@ const CustomerLove = () => {
                     <div className="flex bg-rose-50">
                         <img className="w-20 h-20" src="/cat2.jpg" alt="" />
                         <div className="p-4">
-                            <p>CAT</p>
+                            <p>Cat</p>
                             <div className="flex">
                                 <p><RxStarFilled /></p>
                                 <p><RxStarFilled /></p>
@@ -54,18 +54,18 @@ const CustomerLove = () => {
                     </div>
                     <p className="mt-3 mb-3">The quality of proudct are awesome, I and my kids really love it</p>
                     <div className="flex">
-                        <img className="w-12 h-12 rounded-full" src="/user.jpg" alt="" />
+                        <img className="w-12 h-12 rounded-full" src="/user22.jpg" alt="" />
                         <div className="mx-5">
-                            <p>Michael Dam</p>
-                            <p>November 18,2022</p>
+                            <p>Amit Datta</p>
+                            <p>December 21,2022</p>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div className="flex bg-rose-50">
-                        <img className="w-20 h-20" src="/cat2.jpg" alt="" />
+                        <img className="w-20 h-20" src="/dog2.jpg" alt="" />
                         <div className="p-4">
-                            <p>CAT</p>
+                            <p>Dog</p>
                             <div className="flex">
                                 <p><RxStarFilled /></p>
                                 <p><RxStarFilled /></p>
