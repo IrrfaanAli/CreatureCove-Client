@@ -10,6 +10,9 @@ import Subtabs from "../component/Subtabs";
 import useTitle from "../hooks/useTitle";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Blog from "../component/Blog";
+import Test from "../component/Test";
+import Service from "../component/Service";
 
 
 const Home = () => {
@@ -30,6 +33,9 @@ const Home = () => {
             
             <CustomerLove></CustomerLove>
             <Partner></Partner>
+            <Service></Service>
+            <Blog></Blog>
+            <Test></Test>
            <Footer></Footer>          
         </div>
     );

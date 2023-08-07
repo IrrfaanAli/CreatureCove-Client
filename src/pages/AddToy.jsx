@@ -29,7 +29,7 @@ const AddToy = () => {
        console.log(newToy);
      
 
-      fetch('https://creaturecove.vercel.app/toys',{
+      fetch('https://creaturecovemain.vercel.app/toys',{
          method : 'POST',
          headers : {
             'content-type': 'application/json'

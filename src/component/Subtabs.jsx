@@ -15,7 +15,7 @@ const Subtabs = () => {
     let unicornCategory = "Unicorn";
 
     useEffect(() => {
-        fetch('https://creaturecove.vercel.app/toys')
+        fetch('https://creaturecovemain.vercel.app/toys')
             .then(res => res.json())
             .then(data => setToys(data));
 

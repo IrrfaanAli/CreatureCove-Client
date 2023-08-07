@@ -14,26 +14,26 @@ const MyToys = () => {
 
 
 
-    const url = `https://creaturecove.vercel.app/mytoys?sellerEmail=${user?.email}`
+    const url = `https://creaturecovemain.vercel.app/mytoys?sellerEmail=${user?.email}`
 
     useEffect(() => {
 
         fetch(url)
             .then(res => res.json())
             .then(data => setMytoys(data))
-    }, [url])
+    }, [])
 
 
     const decending = () => {
 
-        const url1 = `https://creaturecove.vercel.app/mytoys?sellerEmail=${user?.email}&sort=-1`
+        const url1 = `https://creaturecovemain.vercel.app/mytoys?sellerEmail=${user?.email}&sort=-1`
         fetch(url1)
             .then(res => res.json())
             .then(data => setMytoys(data))
     }
     const acending = () => {
 
-        const url1 = `https://creaturecove.vercel.app/mytoys?sellerEmail=${user?.email}&sort=1`
+        const url1 = `https://creaturecovemain.vercel.app/mytoys?sellerEmail=${user?.email}&sort=1`
         fetch(url1)
             .then(res => res.json())
             .then(data => setMytoys(data))
